@@ -1,0 +1,4 @@
+Collection status has changed. 1
+Collection has been started.
+Warning: Pause command is not supported for managed code profiling. Runtime overhead is still possible. Data size limit may be exceeded.
+Collection has been paused.

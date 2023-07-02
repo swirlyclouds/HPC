@@ -1,0 +1,95 @@
+15 [139744325785536] INFO perfrun.launcher <> - Launcher main begin
+16 [139744325785536] INFO perfrun.launcher <> - MessageCatalogInit finished
+16 [139744325785536] INFO perfrun.launcher <> - Launcher instance created
+16 [139744325785536] INFO perfrun.launcher <> - argc = 7; cmdline = /home/muaz/intel/oneapi/advisor/2023.1.0/bin64/advixe-runss --ui-output-format xml --ui-output-fd 86 --option-file /home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/HIPC_Baseline/e000/hs003/config/runss.options 
+509 [139744325785536] INFO perfrun.launcher <> - create msngr2::ICliToolContext
+510 [139744325785536] INFO perfrun.launcher <> - create file finder object
+510 [139744325785536] INFO perfrun.launcher <> - create a result directory: pattern = /home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/HIPC_Baseline/e000/hs003 pid = 4294967295
+515 [139744325785536] INFO perfrun.sdk <> - checked that the directory /home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/HIPC_Baseline/e000/hs003 is a local directory
+516 [139744325785536] INFO perfrun.sdk <> - the directory /home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/HIPC_Baseline/e000/hs003 is a local directory with FS type ID 61267
+516 [139744325785536] INFO perfrun.launcher <> - create data directory = /home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/HIPC_Baseline/e000/hs003/data.0
+516 [139744325785536] INFO perfrun.launcher <> - Creating the master collection flag
+517 [139744325785536] INFO perfrun.launcher <> - Done creating the master collection flag
+518 [139744170206784] INFO perfrun.launcher <> - plugin [remoteplug] was disabled because it doesn't support the given collection type.
+519 [139744170206784] INFO perfrun.sdk <> - Allocating TMU :/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/HIPC_Baseline/e000/hs003/data.0/systemcollector-46141-munix-laptop.sc
+519 [139744170206784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+519 [139744170206784] INFO perfrun.launcher <> - plugin [gpu] was disabled because it doesn't support the given collection type.
+519 [139744170206784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+519 [139744170206784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+519 [139744170206784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+519 [139744170206784] INFO perfrun.mrte <> - system-wide mode is 0
+519 [139744170206784] INFO perfrun.mrte <> - Getting  mrte profiling environment ...
+534 [139744170206784] INFO perfrun.mrte <> - INTEL_MRTE_DATA_DIR=/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/HIPC_Baseline/e000/hs003/data.0
+534 [139744170206784] INFO perfrun.mrte <> - INTEL_MRTE_HOST_NAME=munix-laptop
+534 [139744170206784] INFO perfrun.mrte <> - JAVA_TOOL_OPTIONS=-agentlib:advixe_tpssmrte_javaprof_1.0 -Dsun.boot.library.path=/home/muaz/intel/oneapi/advisor/2023.1.0/lib32/runtime:/home/muaz/intel/oneapi/advisor/2023.1.0/lib64/runtime
+534 [139744170206784] INFO perfrun.mrte <> - LD_LIBRARY_PATH=/home/muaz/intel/oneapi/advisor/2023.1.0/lib32/runtime:/home/muaz/intel/oneapi/advisor/2023.1.0/lib64/runtime
+534 [139744170206784] INFO perfrun.mrte <> - Data directory: /home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/HIPC_Baseline/e000/hs003/data.0
+534 [139744170206784] INFO perfrun.mrte <> - Mrte plugin is initialized
+534 [139744170206784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+534 [139744170206784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+534 [139744170206784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+534 [139744170206784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+534 [139744170206784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+534 [139744170206784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+534 [139744170206784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+534 [139744170206784] INFO perfrun.tpss <> - initialize tpss controller
+534 [139744170206784] INFO perfrun.tpss <> - configure collection mode: value = cpu:stack
+535 [139744170206784] INFO perfrun.tpss <> - default obj-size-min=1024
+535 [139744170206784] INFO perfrun.tpss <> - default hash-table-size=0
+535 [139744170206784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+535 [139744170206784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+535 [139744170206784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+535 [139744170206784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+535 [139744170206784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+535 [139744170206784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+535 [139744170206784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+535 [139744170206784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+535 [139744170206784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+535 [139744325785536] INFO perfrun.launcher <> - set environment variable: LD_LIBRARY_PATH = /home/muaz/intel/oneapi/advisor/2023.1.0/lib32/runtime:/home/muaz/intel/oneapi/advisor/2023.1.0/lib64/runtime
+535 [139744325785536] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY32 = /home/muaz/intel/oneapi/advisor/2023.1.0/lib32/runtime/libittnotify_collector.so
+535 [139744325785536] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY64 = /home/muaz/intel/oneapi/advisor/2023.1.0/lib64/runtime/libittnotify_collector.so
+535 [139744325785536] INFO perfrun.launcher <> - set environment variable: INTEL_ITTNOTIFY_GROUPS = 
+535 [139744325785536] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER32 = /home/muaz/intel/oneapi/advisor/2023.1.0/lib32/runtime/libittnotify_collector.so
+535 [139744325785536] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER64 = /home/muaz/intel/oneapi/advisor/2023.1.0/lib64/runtime/libittnotify_collector.so
+535 [139744325785536] INFO perfrun.launcher <> - set environment variable: OMP_TOOL_LIBRARIES = /home/muaz/intel/oneapi/advisor/2023.1.0/lib32/runtime/libittnotify_collector.so:/home/muaz/intel/oneapi/advisor/2023.1.0/lib64/runtime/libittnotify_collector.so
+535 [139744325785536] INFO perfrun.launcher <> - set environment variable: ENABLE_JITPROFILING = 1
+535 [139744325785536] INFO perfrun.launcher <> - set environment variable: CL_CONFIG_USE_VTUNE = True
+535 [139744325785536] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES = 0
+535 [139744325785536] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES_MODE = 0
+535 [139744325785536] INFO perfrun.launcher <> - set environment variable: OMP_TOOL = disabled
+535 [139744325785536] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_DATA_DIR = /home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/HIPC_Baseline/e000/hs003/data.0
+535 [139744325785536] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_HOST_NAME = munix-laptop
+535 [139744325785536] INFO perfrun.launcher <> - set environment variable: JAVA_TOOL_OPTIONS = -agentlib:advixe_tpssmrte_javaprof_1.0 -Dsun.boot.library.path=/home/muaz/intel/oneapi/advisor/2023.1.0/lib32/runtime:/home/muaz/intel/oneapi/advisor/2023.1.0/lib64/runtime
+535 [139744325785536] INFO perfrun.launcher <> - set environment variable: LD_LIBRARY_PATH = /home/muaz/intel/oneapi/advisor/2023.1.0/lib32/runtime:/home/muaz/intel/oneapi/advisor/2023.1.0/lib64/runtime
+535 [139744325785536] INFO perfrun.launcher <> - RpcServer: run RPC server to handle requests
+535 [139744325785536] INFO perfrun.launcher <> - Launcher: command line to start before modification = /home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex
+536 [139744325785536] INFO perfrun.launcher <> - Launcher: command line to start after modification = /home/muaz/intel/oneapi/advisor/2023.1.0/bin64/pin -error_file /home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/HIPC_Baseline/e000/hs003/data.0/pinerr.tpsslog -detach_reattach -follow_execv -tool_load_option deepbind -t64 /home/muaz/intel/oneapi/advisor/2023.1.0/lib64/libtpsstool.so -t /home/muaz/intel/oneapi/advisor/2023.1.0/lib32/libtpsstool.so -server_name tpss_ipc.46141 -prd_dir /home/muaz/intel/oneapi/advisor/2023.1.0 -- /home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex
+536 [139744325785536] INFO perfrun.launcher <> - ProcessCreator object was created
+537 [139744325785536] INFO perfrun.launcher <> - Launcher: the process was started in suspend mode
+540 [139744170206784] WARN perfrun.system <> - Could not do anything with /sys/kernel/debug/kvm: boost::filesystem::status: Permission denied: "/sys/kernel/debug/kvm", at file: vcs/perfrun1/plugins/system/src/trace_writer.cpp:787
+540 [139744170206784] WARN perfrun.system <> - Folder "/var/run/libvirt/qemu/"doesn't exist, at file: vcs/perfrun1/plugins/system/src/trace_writer.cpp:800
+542 [139744170206784] WARN perfrun.sdk <> - Failed to find xl binary on any of the system paths: /bin, /sbin, /usr/bin, /usr/sbin., at file: vcs/perfrun1/sdk/src/utils.cpp:204
+552 [139744170206784] INFO perfrun.vdso <> - Helper runtool '/home/muaz/intel/oneapi/advisor/2023.1.0/bin32/advixe-runss -dump-vdso -r /home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/HIPC_Baseline/e000/hs003 --tmp-dir /tmp/advixe-tmp-muaz' returned 1
+1107 [139744170206784] INFO perfrun.vdso <> - Helper runtool '/home/muaz/intel/oneapi/advisor/2023.1.0/bin64/advixe-runss -dump-vdso -r /home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/HIPC_Baseline/e000/hs003 --tmp-dir /tmp/advixe-tmp-muaz' returned 0
+1107 [139744170206784] INFO perfrun.itt <> - start itt controller for pid #46154
+1107 [139744170206784] INFO perfrun.tpss <> - start tpss controller for pid #46154
+1157 [139744325785536] INFO perfrun.launcher <> - Launcher: all plugins were started
+1158 [139744325785536] INFO perfrun.launcher <> - DirectoryMonitor object was created
+1158 [139744325785536] INFO perfrun.launcher <> - DirectoryMonitor: a callback was added
+1158 [139744325785536] INFO perfrun.launcher <> - DirectoryMonitor was started with pingTime = 1000
+1158 [139744325785536] INFO perfrun.launcher <> - DeadlineTimer is going to be constructed
+1158 [139744325785536] INFO perfrun.launcher <> - DeadlineTimer: a callback was added
+1161 [139744325785536] INFO perfrun.launcher <> - Launcher: resume the profiled application and  wait its termination or stop command
+163893 [139744325785536] INFO perfrun.launcher <> - Launcher: the profiled application was terminated  with exit code = 0
+163898 [139744170206784] INFO perfrun.itt <> - detach itt controller
+163898 [139744170206784] INFO perfrun.itt <> - detach itt controller done
+163898 [139744170206784] INFO perfrun.tpss <> - stop tpss controller
+163899 [139744170206784] INFO perfrun.sdk <> - De-allocating TMU: /home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/HIPC_Baseline/e000/hs003/data.0/systemcollector-46141-munix-laptop.sc
+163899 [139744170206784] INFO perfrun.system <> - closed the system trace file: /home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/HIPC_Baseline/e000/hs003/data.0/systemcollector-46141-munix-laptop.sc
+163899 [139744325785536] INFO perfrun.launcher <> - Launcher: all plugins were stopped.
+163899 [139744325785536] INFO perfrun.launcher <> - DeadlineTimer is going to be destroyed
+163899 [139744325785536] INFO perfrun.launcher <> - DeadlineTimer was destroyed
+163899 [139744325785536] INFO perfrun.launcher <> - DirectoryMonitor object was destroyed
+163899 [139744325785536] WARN perfrun.launcher <> - Stop command is ignored because it is received when collection is already stopped, at file: vcs/perfrun1/launcher/src/command_handler.cpp:226
+163900 [139744325785536] INFO perfrun.launcher <> - Application exit code: 0
+163900 [139744325785536] INFO perfrun.launcher <> - Exit code: 0

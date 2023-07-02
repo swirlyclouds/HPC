@@ -1,0 +1,10 @@
+
+=== Start: [2023/06/03 16:05:22] === 
+Peak bandwidth measurement started...
+Peak bandwidth measurement finished.
+Analysis started...
+Result file: /home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/HIPC_Baseline/e000/trc000/trc000.advixe 
+Application exit code: 0 
+Result file: /home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/HIPC_Baseline/e000/trc000/trc000.advixe 
+Analysis completed
+=== End: [2023/06/03 18:01:28] === 

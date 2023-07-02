@@ -1,0 +1,15 @@
+-r
+/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/HIPC_Baseline/e000/trc000
+--return-app-exitcode
+--cs-mode=count-loops,count-flops,stl-profiling,stack-stitching
+--count-flops
+--benchmarks=dram,mcdram,cpu_cache,flop_peak,int,
+--cs-file=/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/HIPC_Baseline/e000/callstacks.def
+--jit-profiling
+--enable-cache-simulation
+--cache-config=4:48k:12w/1280k:20w/1:8192k:8w
+--cachesim-sampling-factor=10
+--target-gpu=0:0:2.0
+--app-working-dir=/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding
+--
+/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex

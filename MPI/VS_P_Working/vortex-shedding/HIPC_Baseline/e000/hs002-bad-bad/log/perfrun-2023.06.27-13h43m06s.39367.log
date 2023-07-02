@@ -1,0 +1,10 @@
+18 [140100714010560] INFO perfrun.launcher <> - Launcher main begin
+19 [140100714010560] INFO perfrun.launcher <> - MessageCatalogInit finished
+19 [140100714010560] INFO perfrun.launcher <> - Launcher instance created
+19 [140100714010560] INFO perfrun.launcher <> - argc = 9; cmdline = /home/muaz/intel/oneapi/advisor/2023.1.0/bin64/advixe-runss --ui-output-format xml --ui-output-fd 97 -r /home/muaz/Documents/HIPC/MPI/VS_P_Working/vortex-shedding/HIPC_Baseline/e000/hs002 --command stop 
+513 [140100714010560] INFO perfrun.launcher <> - create msngr2::ICliToolContext
+514 [140100714010560] INFO perfrun.launcher <> - create file finder object
+514 [140100714010560] INFO perfrun.launcher <> - open the result directory: pattern = /home/muaz/Documents/HIPC/MPI/VS_P_Working/vortex-shedding/HIPC_Baseline/e000/hs002
+517 [140100714010560] INFO perfrun.launcher <> - RpcClient: IP address = 127.0.0.1; port = 4294943449
+529 [140100714010560] INFO perfrun.launcher <> - Application exit code: 0
+529 [140100714010560] INFO perfrun.launcher <> - Exit code: 0

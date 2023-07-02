@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="poisson"
+           is_vectorized="1"
+           self_time="9.295018E+01"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="8"
+           priority="0">
+           <recommendation id="rec_div_c" title="Enable the use of approximate division instructions" confidence="1" gain="-1"/>
+  </hotspot>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="compute_tentative_velocity"
+           is_vectorized="1"
+           self_time="1.656476E+00"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="19"
+           priority="0">
+           <recommendation id="rec_div_c" title="Enable the use of approximate division instructions" confidence="1" gain="-1"/>
+  </hotspot>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="compute_tentative_velocity"
+           is_vectorized="1"
+           self_time="1.532401E+00"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="11"
+           priority="0">
+           <recommendation id="rec_div_c" title="Enable the use of approximate division instructions" confidence="1" gain="-1"/>
+  </hotspot>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="compute_rhs"
+           is_vectorized="0"
+           self_time="7.320370E-01"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="21"
+           priority="0">
+           <recommendation id="rec_div_c" title="Enable the use of approximate division instructions" confidence="1" gain="-1"/>
+  </hotspot>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="update_velocity"
+           is_vectorized="0"
+           self_time="4.400863E-01"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="17"
+           priority="0">
+           <recommendation id="rec_div_c" title="Enable the use of approximate division instructions" confidence="1" gain="-1"/>
+  </hotspot>
+</IntelParallelAdvisorSummary >

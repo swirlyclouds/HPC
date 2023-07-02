@@ -1,0 +1,8 @@
+
+=== Start: [2023/06/27 17:12:29] === 
+Analysis started...
+Result file: /home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/HIPC_Baseline/e000/trc001/trc001.advixe 
+Application exit code: 0 
+Result file: /home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/HIPC_Baseline/e000/trc001/trc001.advixe 
+Analysis completed
+=== End: [2023/06/27 18:04:04] === 

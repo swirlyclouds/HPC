@@ -1,0 +1,35 @@
+16 [140151284991936] INFO perfrun.launcher <> - Launcher main begin
+16 [140151284991936] INFO perfrun.launcher <> - MessageCatalogInit finished
+16 [140151284991936] INFO perfrun.launcher <> - Launcher instance created
+16 [140151284991936] INFO perfrun.launcher <> - argc = 6; cmdline = /home/muaz/intel/oneapi/advisor/2023.1.0/bin64/advixe-runss -dump-vdso -r /home/muaz/Documents/HIPC/MPI/VS_P_Working/vortex-shedding/HIPC_Baseline/e000/hs002 --tmp-dir /tmp/advixe-tmp-muaz 
+507 [140151284991936] INFO perfrun.launcher <> - create msngr2::ICliToolContext
+508 [140151284991936] INFO perfrun.launcher <> - create file finder object
+508 [140151128843840] INFO perfrun.launcher <> - plugin [remoteplug] was disabled because it doesn't support the given collection type.
+509 [140151128843840] INFO perfrun.launcher <> - plugin [system] was disabled because it doesn't support the given collection type.
+509 [140151128843840] INFO perfrun.vdso <> - dumping [vdso] pseudomodule
+510 [140151128843840] INFO perfrun.launcher <> - plugin [itt] was disabled because it doesn't support the given collection type.
+510 [140151128843840] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+510 [140151128843840] INFO perfrun.launcher <> - plugin [gpu] was disabled because it doesn't support the given collection type.
+510 [140151128843840] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+510 [140151128843840] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+510 [140151128843840] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+510 [140151128843840] INFO perfrun.launcher <> - plugin [mrte] was disabled because it doesn't support the given collection type.
+510 [140151128843840] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+510 [140151128843840] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+510 [140151128843840] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+510 [140151128843840] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+510 [140151128843840] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+510 [140151128843840] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+510 [140151128843840] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+510 [140151128843840] INFO perfrun.launcher <> - plugin [tpss] was disabled because it doesn't support the given collection type.
+510 [140151128843840] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+510 [140151128843840] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+510 [140151128843840] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+510 [140151128843840] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+510 [140151128843840] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+510 [140151128843840] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+510 [140151128843840] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+510 [140151128843840] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+510 [140151128843840] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+510 [140151284991936] INFO perfrun.launcher <> - Application exit code: 0
+510 [140151284991936] INFO perfrun.launcher <> - Exit code: 0

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<log version="1.0" tool="runtool">
+
+<msg id="1" tool="runtool">
+  <type>log-start</type>
+  <arg>2023/06/27 17:12:29</arg>
+</msg>
+<msg id="2" tool="runtool">
+  <type>collector-starts</type>
+</msg>
+<msg id="3" tool="runtool">
+  <type>marker-file</type>
+  <arg>/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/HIPC_Baseline/e000/trc001/trc001.advixe</arg>
+</msg>
+<msg id="4" tool="trc">
+  <type>PROCESS_START</type>
+  <arg>/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex</arg>
+  <arg>46387</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Jun 27 17:12:29 2023</timestamp>
+</msg>
+<msg id="5" tool="trc">
+  <type>PROCESS_ANALYSIS_MODE</type>
+  <arg>full</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Jun 27 17:12:29 2023</timestamp>
+</msg>
+<msg id="6" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex</arg>
+  <arg>0x55950159c000</arg>
+  <arg>0x5595015a4abf</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Jun 27 17:12:29 2023</timestamp>
+</msg>
+<msg id="7" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/ld-linux-x86-64.so.2</arg>
+  <arg>0x7f50fe68c000</arg>
+  <arg>0x7f50fe6c72d7</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Jun 27 17:12:29 2023</timestamp>
+</msg>
+<msg id="8" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>[vdso]</arg>
+  <arg>0x7ffc0fdea000</arg>
+  <arg>0x7ffc0fdeae6c</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Jun 27 17:12:29 2023</timestamp>
+</msg>
+<msg id="9" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib/x86_64-linux-gnu/libm.so.6</arg>
+  <arg>0x7f50e9138000</arg>
+  <arg>0x7f50e921e107</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Jun 27 17:12:29 2023</timestamp>
+</msg>
+<msg id="10" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib/x86_64-linux-gnu/libc.so.6</arg>
+  <arg>0x7f50e8e00000</arg>
+  <arg>0x7f50e9027e4f</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Jun 27 17:12:29 2023</timestamp>
+</msg>
+<msg id="11" tool="trc">
+  <type>STOP_INVOKED</type>
+  <arg></arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Jun 27 18:04:00 2023</timestamp>
+</msg>
+<msg id="12" tool="trc">
+  <type>STOP_PROCESSED</type>
+  <arg></arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Jun 27 18:04:00 2023</timestamp>
+</msg>
+<msg id="13" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Jun 27 18:04:00 2023</timestamp>
+</msg>
+<msg id="14" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/ld-linux-x86-64.so.2</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Jun 27 18:04:00 2023</timestamp>
+</msg>
+<msg id="15" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>[vdso]</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Jun 27 18:04:00 2023</timestamp>
+</msg>
+<msg id="16" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib/x86_64-linux-gnu/libm.so.6</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Jun 27 18:04:00 2023</timestamp>
+</msg>
+<msg id="17" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib/x86_64-linux-gnu/libc.so.6</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Jun 27 18:04:00 2023</timestamp>
+</msg>
+<msg id="18" tool="trc">
+  <type>PROCESS_FINISH</type>
+  <arg></arg>
+  <arg>46387</arg>
+  <arg>0x0</arg>
+  <severity>INFO</severity>
+  <timestamp>Tue Jun 27 18:04:00 2023</timestamp>
+</msg>
+<msg id="19" tool="runtool">
+  <type>app-exit-code</type>
+  <arg>0</arg>
+</msg>
+<msg id="20" tool="runtool">
+  <type>marker-file</type>
+  <arg>/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/HIPC_Baseline/e000/trc001/trc001.advixe</arg>
+</msg>
+<msg id="21" tool="runtool">
+  <type>collector-done</type>
+</msg>
+<msg id="22" tool="runtool">
+  <type>log-end</type>
+  <arg>2023/06/27 18:04:04</arg>
+</msg>
+
+</log>
+

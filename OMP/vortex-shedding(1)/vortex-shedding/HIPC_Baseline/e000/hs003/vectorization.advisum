@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="poisson"
+           is_vectorized="1"
+           self_time="9.295018E+01"
+           total_time="9.295018E+01"
+           trip_counts="128"
+           func_instance="8"
+           priority="0"/>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="poisson"
+           is_vectorized="0"
+           self_time="6.325872E+01"
+           total_time="6.325872E+01"
+           trip_counts="127"
+           func_instance="4"
+           priority="0"/>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="compute_tentative_velocity"
+           is_vectorized="1"
+           self_time="1.656476E+00"
+           total_time="1.656476E+00"
+           trip_counts="128"
+           func_instance="19"
+           priority="0"/>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="compute_tentative_velocity"
+           is_vectorized="1"
+           self_time="1.532401E+00"
+           total_time="1.532401E+00"
+           trip_counts="127"
+           func_instance="11"
+           priority="0"/>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="compute_rhs"
+           is_vectorized="0"
+           self_time="7.320370E-01"
+           total_time="7.320370E-01"
+           trip_counts="128"
+           func_instance="21"
+           priority="0"/>
+</IntelParallelAdvisorSummary >

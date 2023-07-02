@@ -1,0 +1,562 @@
+# callstacks file version: 8
+#    rowid	    parent	       rva	 loop	 system	                                function	binary	instance_start_rva	instance_size	instance_end_rva	finst_rowid	roi	is_inlined	jit_method_id	tripcounts_roi	flops_roi	cachesim_roi	data_transfer_roi	projection_roi
+         1	        -1	      5344	    0	      0	                                  _start	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	5344	38	0	1	0	0	0	0	0	0	0	0
+         2	        -1	      5380	    0	      0	                                  _start	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	5344	38	0	1	0	0	0	0	0	0	0	0
+         3	       544	    171583	    1	      1	[Loop at line 379 in __libc_start_main_impl]	/lib/x86_64-linux-gnu/libc.so.6	171555,171688	129,65	0	47	0	0	0	0	0	0	0	0
+         4	         3	    171407	    0	      1	                  __libc_start_call_main	/lib/x86_64-linux-gnu/libc.so.6	171280	172	0	49	0	0	0	0	0	0	0	0
+         5	       275	      5009	    1	      0	                   [Loop@0x1378 in main]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	4984,5112	123,101	5216	2	0	0	0	0	0	0	0	0
+         6	       279	     15977	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+         7	       279	     15956	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+         8	       284	     15371	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+         9	       279	     15973	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+        10	       284	     15379	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        11	       279	     15839	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+        12	       284	     15498	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        13	       284	     15491	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        14	       279	     15939	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+        15	       284	     15506	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        16	       275	      4995	    1	      0	                   [Loop@0x1378 in main]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	4984,5112	123,101	5216	2	0	0	0	0	0	0	0	0
+        17	       295	     13853	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+        18	       279	     15982	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+        19	       284	     15502	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        20	       279	     15947	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+        21	       284	     15529	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        22	       284	     15314	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        23	       284	     15282	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        24	       284	     15514	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        25	       284	     15510	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        26	       279	     15986	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+        27	       279	     15814	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+        28	       284	     15383	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        29	       284	     15436	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        30	       284	     15286	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        31	       279	     15876	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+        32	       279	     15810	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+        33	       279	     15872	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+        34	       279	     15912	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+        35	       279	     15902	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+        36	       279	     15906	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+        37	       284	     15526	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        38	       284	     15469	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        39	       284	     16125	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        40	       284	     15427	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        41	       279	     15968	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+        42	       284	     15423	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        43	       284	     16130	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        44	       275	      5021	    1	      0	                   [Loop@0x1378 in main]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	4984,5112	123,101	5216	2	0	0	0	0	0	0	0	0
+        45	       325	     16756	    1	      0	        [Loop@0x4130 in update_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16688	81	16769	14	0	0	0	0	0	0	0	0
+        46	       279	     15964	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+        47	       284	     15465	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        48	       279	     15844	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+        49	       284	     15487	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        50	       284	     15309	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        51	       279	     15943	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+        52	       334	     16567	    1	      0	        [Loop@0x4068 in update_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16488	88	16576	17	0	0	0	0	0	0	0	0
+        53	       279	     15898	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+        54	       284	     15272	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        55	       339	     13569	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+        56	       284	     15483	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        57	       284	     15291	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        58	       284	     15319	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        59	       275	      5002	    1	      0	                   [Loop@0x1378 in main]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	4984,5112	123,101	5216	2	0	0	0	0	0	0	0	0
+        60	       346	     14777	    1	      0	            [Loop@0x3970 in compute_rhs]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14704	92	14796	21	0	0	0	0	0	0	0	0
+        61	       283	     15684	    1	      0	                [Loop@0x3b90 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15248,15272,16120,16144	18,433,15,14	15705	9	0	0	0	0	0	0	0	0
+        62	       284	     16144	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        63	       284	     15458	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        64	       279	     15891	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+        65	       284	     15375	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        66	       325	     16751	    1	      0	        [Loop@0x4130 in update_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16688	81	16769	14	0	0	0	0	0	0	0	0
+        67	       279	     15960	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+        68	       346	     14769	    1	      0	            [Loop@0x3970 in compute_rhs]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14704	92	14796	21	0	0	0	0	0	0	0	0
+        69	       279	     15832	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+        70	       279	     15865	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+        71	       295	     14118	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+        72	       284	     15474	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        73	       284	     15330	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        74	       295	     14080	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+        75	       284	     15453	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        76	       279	     15935	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+        77	       279	     15856	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+        78	       325	     16707	    1	      0	        [Loop@0x4130 in update_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16688	81	16769	14	0	0	0	0	0	0	0	0
+        79	       295	     13961	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+        80	       284	     15542	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        81	       278	     15769	    1	      0	                [Loop@0x3d90 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15760	260	16020	6	0	0	0	0	0	0	0	0
+        82	       339	     13582	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+        83	       284	     15431	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        84	       339	     13467	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+        85	       275	      5028	    1	      0	                   [Loop@0x1378 in main]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	4984,5112	123,101	5216	2	0	0	0	0	0	0	0	0
+        86	       373	     11981	    1	      0	[Loop@0x2e30 in apply_boundary_conditions]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	11824,11960	64,42	11888,12002	24	0	0	0	0	0	0	0	0
+        87	       284	     15523	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        88	       339	     13394	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+        89	       284	     15534	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        90	       295	     13928	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+        91	       284	     15418	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        92	       275	      5099	    1	      0	                   [Loop@0x1378 in main]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	4984,5112	123,101	5216	2	0	0	0	0	0	0	0	0
+        93	        92	      4528	    0	      0	                             func@0x11b0	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	4528	4	0	26	0	0	0	0	0	0	0	0
+        94	       382	     15031	    1	      0	                [Loop@0x3aa0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15008	32	15040	27	0	0	0	0	0	0	0	0
+        95	       284	     15415	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+        96	       339	     13574	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+        97	       387	     16969	    1	      0	  [Loop@0x4230 in set_timestep_interval]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16944	35	16979	29	0	0	0	0	0	0	0	0
+        98	        97	    227712	    0	      1	                                    fmax	/lib/x86_64-linux-gnu/libm.so.6	227712	65	0	35	0	0	0	0	0	0	0	0
+        99	       382	     15035	    1	      0	                [Loop@0x3aa0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15008	32	15040	27	0	0	0	0	0	0	0	0
+       100	       283	     15252	    1	      0	                [Loop@0x3b90 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15248,15272,16120,16144	18,433,15,14	15705	9	0	0	0	0	0	0	0	0
+       101	       346	     14783	    1	      0	            [Loop@0x3970 in compute_rhs]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14704	92	14796	21	0	0	0	0	0	0	0	0
+       102	       339	     13578	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       103	       284	     15359	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+       104	       295	     14114	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+       105	       279	     15926	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+       106	       334	     16549	    1	      0	        [Loop@0x4068 in update_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16488	88	16576	17	0	0	0	0	0	0	0	0
+       107	       284	     16120	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+       108	       284	     15548	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+       109	       295	     14099	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+       110	       339	     13347	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       111	       279	     15806	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+       112	       284	     15301	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+       113	       334	     16561	    1	      0	        [Loop@0x4068 in update_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16488	88	16576	17	0	0	0	0	0	0	0	0
+       114	       284	     15538	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+       115	       387	     16965	    1	      0	  [Loop@0x4230 in set_timestep_interval]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16944	35	16979	29	0	0	0	0	0	0	0	0
+       116	       279	     15894	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+       117	       295	     13924	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+       118	       339	     13435	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       119	       284	     15361	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+       120	       339	     13399	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       121	       279	     15952	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+       122	       339	     13351	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       123	        97	    227726	    0	      1	                                    fmax	/lib/x86_64-linux-gnu/libm.so.6	227712	65	0	35	0	0	0	0	0	0	0	0
+       124	       284	     15306	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+       125	       279	     15916	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+       126	       334	     16541	    1	      0	        [Loop@0x4068 in update_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16488	88	16576	17	0	0	0	0	0	0	0	0
+       127	       346	     14727	    1	      0	            [Loop@0x3970 in compute_rhs]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14704	92	14796	21	0	0	0	0	0	0	0	0
+       128	       284	     15479	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+       129	       278	     15773	    1	      0	                [Loop@0x3d90 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15760	260	16020	6	0	0	0	0	0	0	0	0
+       130	       334	     16571	    1	      0	        [Loop@0x4068 in update_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16488	88	16576	17	0	0	0	0	0	0	0	0
+       131	       421	     17110	    1	      0	  [Loop@0x42c0 in set_timestep_interval]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	17088	41	17129	32	0	0	0	0	0	0	0	0
+       132	       284	     15354	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+       133	       339	     13592	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       134	       279	     15885	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+       135	       426	     11876	    1	      0	[Loop@0x2e60 in apply_boundary_conditions]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	11872,11960	16,21	11888,11981	34	0	0	0	0	0	0	0	0
+       136	       421	     17114	    1	      0	  [Loop@0x42c0 in set_timestep_interval]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	17088	41	17129	32	0	0	0	0	0	0	0	0
+       137	       136	    227720	    0	      1	                                    fmax	/lib/x86_64-linux-gnu/libm.so.6	227712	65	0	35	0	0	0	0	0	0	0	0
+       138	       339	     13307	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       139	       279	     15922	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+       140	       284	     15334	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+       141	       325	     16747	    1	      0	        [Loop@0x4130 in update_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16688	81	16769	14	0	0	0	0	0	0	0	0
+       142	       339	     13504	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       143	       339	     13212	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       144	       295	     14038	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+       145	       339	     13475	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       146	        97	    227776	    0	      1	                                    fmax	/lib/x86_64-linux-gnu/libm.so.6	227712	65	0	35	0	0	0	0	0	0	0	0
+       147	       295	     14122	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+       148	       339	     13404	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       149	       279	     15849	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+       150	       295	     13997	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+       151	       295	     14109	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+       152	       339	     13494	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       153	       279	     15796	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+       154	       284	     15350	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+       155	       346	     14721	    1	      0	            [Loop@0x3970 in compute_rhs]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14704	92	14796	21	0	0	0	0	0	0	0	0
+       156	       421	     17102	    1	      0	  [Loop@0x42c0 in set_timestep_interval]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	17088	41	17129	32	0	0	0	0	0	0	0	0
+       157	       284	     15443	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+       158	       339	     13356	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       159	       284	     15400	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+       160	       284	     15297	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+       161	       295	     14131	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+       162	       295	     13965	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+       163	       339	     13183	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       164	       284	     16153	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+       165	       284	     15387	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+       166	       295	     13775	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+       167	       339	     13177	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       168	       295	     13811	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+       169	       295	     14043	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+       170	       295	     13898	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+       171	       325	     16739	    1	      0	        [Loop@0x4130 in update_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16688	81	16769	14	0	0	0	0	0	0	0	0
+       172	       426	     11960	    1	      0	[Loop@0x2e60 in apply_boundary_conditions]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	11872,11960	16,21	11888,11981	34	0	0	0	0	0	0	0	0
+       173	       421	     17097	    1	      0	  [Loop@0x42c0 in set_timestep_interval]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	17088	41	17129	32	0	0	0	0	0	0	0	0
+       174	       387	     16970	    1	      0	  [Loop@0x4230 in set_timestep_interval]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16944	35	16979	29	0	0	0	0	0	0	0	0
+       175	       284	     15552	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+       176	       339	     13544	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       177	       334	     16557	    1	      0	        [Loop@0x4068 in update_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16488	88	16576	17	0	0	0	0	0	0	0	0
+       178	       279	     15990	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+       179	       339	     13463	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       180	       339	     13218	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       181	       346	     14787	    1	      0	            [Loop@0x3970 in compute_rhs]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14704	92	14796	21	0	0	0	0	0	0	0	0
+       182	        97	    227720	    0	      1	                                    fmax	/lib/x86_64-linux-gnu/libm.so.6	227712	65	0	35	0	0	0	0	0	0	0	0
+       183	       295	     14094	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+       184	       284	     15408	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+       185	       334	     16504	    1	      0	        [Loop@0x4068 in update_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16488	88	16576	17	0	0	0	0	0	0	0	0
+       186	       295	     13724	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+       187	       284	     15345	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+       188	       325	     16760	    1	      0	        [Loop@0x4130 in update_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16688	81	16769	14	0	0	0	0	0	0	0	0
+       189	       339	     13499	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       190	       284	     15449	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+       191	       279	     15792	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+       192	       426	     11872	    1	      0	[Loop@0x2e60 in apply_boundary_conditions]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	11872,11960	16,21	11888,11981	34	0	0	0	0	0	0	0	0
+       193	       334	     16506	    1	      0	        [Loop@0x4068 in update_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16488	88	16576	17	0	0	0	0	0	0	0	0
+       194	       421	     17123	    1	      0	  [Loop@0x42c0 in set_timestep_interval]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	17088	41	17129	32	0	0	0	0	0	0	0	0
+       195	        92	      4532	    0	      0	                             func@0x11b4	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	4532	12	0	36	0	0	0	0	0	0	0	0
+       196	       283	     15688	    1	      0	                [Loop@0x3b90 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15248,15272,16120,16144	18,433,15,14	15705	9	0	0	0	0	0	0	0	0
+       197	       339	     13539	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       198	       295	     13858	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+       199	       279	     15867	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+       200	       339	     13588	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       201	       284	     16149	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+       202	       279	     15932	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+       203	       325	     16703	    1	      0	        [Loop@0x4130 in update_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16688	81	16769	14	0	0	0	0	0	0	0	0
+       204	       279	     15821	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+       205	       279	     15802	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+       206	       136	    227712	    0	      1	                                    fmax	/lib/x86_64-linux-gnu/libm.so.6	227712	65	0	35	0	0	0	0	0	0	0	0
+       207	        97	    227716	    0	      1	                                    fmax	/lib/x86_64-linux-gnu/libm.so.6	227712	65	0	35	0	0	0	0	0	0	0	0
+       208	       339	     13381	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       209	       339	     13386	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       210	       339	     13431	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       211	       421	     17127	    1	      0	  [Loop@0x42c0 in set_timestep_interval]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	17088	41	17129	32	0	0	0	0	0	0	0	0
+       212	       283	     15248	    1	      0	                [Loop@0x3b90 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15248,15272,16120,16144	18,433,15,14	15705	9	0	0	0	0	0	0	0	0
+       213	       382	     15023	    1	      0	                [Loop@0x3aa0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15008	32	15040	27	0	0	0	0	0	0	0	0
+       214	       339	     13534	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       215	       279	     15834	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+       216	       346	     14751	    1	      0	            [Loop@0x3970 in compute_rhs]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14704	92	14796	21	0	0	0	0	0	0	0	0
+       217	       295	     14001	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+       218	       382	     15027	    1	      0	                [Loop@0x3aa0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15008	32	15040	27	0	0	0	0	0	0	0	0
+       219	       339	     13260	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       220	       284	     15392	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+       221	       284	     15340	    1	      0	                [Loop@0x3ba8 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15272,16120,16144	402,15,14	15680,15674	8	0	0	0	0	0	0	0	0
+       222	       373	     11866	    1	      0	[Loop@0x2e30 in apply_boundary_conditions]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	11824,11960	64,42	11888,12002	24	0	0	0	0	0	0	0	0
+       223	       295	     13916	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+       224	       295	     14075	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+       225	       511	     11694	    1	      0	[Loop@0x2d98 in apply_boundary_conditions]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	11672	56	11728	37	0	0	0	0	0	0	0	0
+       226	       339	     13266	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       227	       426	     11972	    1	      0	[Loop@0x2e60 in apply_boundary_conditions]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	11872,11960	16,21	11888,11981	34	0	0	0	0	0	0	0	0
+       228	       295	     14128	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+       229	       387	     16957	    1	      0	  [Loop@0x4230 in set_timestep_interval]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16944	35	16979	29	0	0	0	0	0	0	0	0
+       230	       339	     13556	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       231	        44	     16388	    0	      0	                         update_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16368	419	0	15	0	0	0	0	0	0	0	0
+       232	       231	   1219856	    0	      1	                                  mcount	/lib/x86_64-linux-gnu/libc.so.6	1219856	95	0	50	0	0	0	0	0	0	0	0
+       233	       136	    227726	    0	      1	                                    fmax	/lib/x86_64-linux-gnu/libm.so.6	227712	65	0	35	0	0	0	0	0	0	0	0
+       234	       295	     13728	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+       235	       339	     13489	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       236	       339	     13312	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       237	       339	     13509	    1	      0	[Loop@0x3360 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13152	449	13601	19	0	0	0	0	0	0	0	0
+       238	       136	    227716	    0	      1	                                    fmax	/lib/x86_64-linux-gnu/libm.so.6	227712	65	0	35	0	0	0	0	0	0	0	0
+       239	       334	     16492	    1	      0	        [Loop@0x4068 in update_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16488	88	16576	17	0	0	0	0	0	0	0	0
+       240	        97	    227722	    0	      1	                                    fmax	/lib/x86_64-linux-gnu/libm.so.6	227712	65	0	35	0	0	0	0	0	0	0	0
+       241	       386	     16982	    1	      0	  [Loop@0x4220 in set_timestep_interval]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16928	66	17000	31	0	0	0	0	0	0	0	0
+       242	       387	     16953	    1	      0	  [Loop@0x4230 in set_timestep_interval]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16944	35	16979	29	0	0	0	0	0	0	0	0
+       243	        85	     12410	    0	      0	               apply_boundary_conditions	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	11456	1538	0	25	0	0	0	0	0	0	0	0
+       244	       373	     11827	    1	      0	[Loop@0x2e30 in apply_boundary_conditions]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	11824,11960	64,42	11888,12002	24	0	0	0	0	0	0	0	0
+       245	       421	     17093	    1	      0	  [Loop@0x42c0 in set_timestep_interval]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	17088	41	17129	32	0	0	0	0	0	0	0	0
+       246	       295	     13825	    1	      0	[Loop@0x3580 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13696	444	14140	11	0	0	0	0	0	0	0	0
+       247	       283	     15680	    1	      0	                [Loop@0x3b90 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15248,15272,16120,16144	18,433,15,14	15705	9	0	0	0	0	0	0	0	0
+       248	       334	     16535	    1	      0	        [Loop@0x4068 in update_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16488	88	16576	17	0	0	0	0	0	0	0	0
+       249	       426	     11964	    1	      0	[Loop@0x2e60 in apply_boundary_conditions]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	11872,11960	16,21	11888,11981	34	0	0	0	0	0	0	0	0
+       250	       279	     15824	    1	      0	                [Loop@0x3db0 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15792	207	15999	4	0	0	0	0	0	0	0	0
+       251	         4	      5327	    0	      0	                                    main	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	4864	466	0	3	0	0	0	0	0	0	0	0
+       252	       533	     10680	    1	      0	              [Loop@0x2990 in write_vtk]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	10640	50	10690	38	0	0	0	0	0	0	0	0
+       253	       252	   1265346	    0	      1	                          ___fprintf_chk	/lib/x86_64-linux-gnu/libc.so.6	1265184	192	0	51	0	0	0	0	0	0	0	0
+       254	       546	    485804	    0	      1	                        __printf_fp_spec	/lib/x86_64-linux-gnu/libc.so.6	485711,485726,485800	7,27,8	0	52	0	1	0	0	0	0	0	0
+       255	       254	    371177	    0	      1	                      __GI___printf_fp_l	/lib/x86_64-linux-gnu/libc.so.6	371072	11295	0	54	0	0	0	0	0	0	0	0
+       256	       254	    376149	    0	      1	                      __GI___printf_fp_l	/lib/x86_64-linux-gnu/libc.so.6	371072	11295	0	54	0	0	0	0	0	0	0	0
+       257	       536	     10856	    1	      0	              [Loop@0x2a40 in write_vtk]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	10816	50	10866	41	0	0	0	0	0	0	0	0
+       258	       257	   1265346	    0	      1	                          ___fprintf_chk	/lib/x86_64-linux-gnu/libc.so.6	1265184	192	0	51	0	0	0	0	0	0	0	0
+       259	       548	    485804	    0	      1	                        __printf_fp_spec	/lib/x86_64-linux-gnu/libc.so.6	485711,485726,485800	7,27,8	0	52	0	1	0	0	0	0	0	0
+       260	       259	    377187	    0	      1	                      __GI___printf_fp_l	/lib/x86_64-linux-gnu/libc.so.6	371072	11295	0	54	0	0	0	0	0	0	0	0
+       261	       550	    378402	    1	      1	[Loop at line 684 in __GI___printf_fp_l]	/lib/x86_64-linux-gnu/libc.so.6	378176,378416,378616,380074,380422,381454,381867,382319	232,196,87,77,97,112,14,10	0	55	0	0	0	0	0	0	0	0
+       262	       261	    348732	    0	      1	                               __mpn_mul	/lib/x86_64-linux-gnu/libc.so.6	348128	1156	0	56	0	0	0	0	0	0	0	0
+       263	       262	    349451	    0	      1	                             __mpn_mul_1	/lib/x86_64-linux-gnu/libc.so.6	349296	281	0	57	0	0	0	0	0	0	0	0
+       264	       539	     11032	    1	      0	              [Loop@0x2af0 in write_vtk]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	10992	50	11042	43	0	0	0	0	0	0	0	0
+       265	       264	   1265346	    0	      1	                          ___fprintf_chk	/lib/x86_64-linux-gnu/libc.so.6	1265184	192	0	51	0	0	0	0	0	0	0	0
+       266	       552	    485804	    0	      1	                        __printf_fp_spec	/lib/x86_64-linux-gnu/libc.so.6	485711,485726,485800	7,27,8	0	52	0	1	0	0	0	0	0	0
+       267	       266	    375954	    0	      1	                      __GI___printf_fp_l	/lib/x86_64-linux-gnu/libc.so.6	371072	11295	0	54	0	0	0	0	0	0	0	0
+       268	       556	    374451	    1	      1	[Loop at line 963 in __GI___printf_fp_l]	/lib/x86_64-linux-gnu/libc.so.6	374436	54	0	58	0	0	0	0	0	0	0	0
+       269	       268	    369964	    0	      1	                              hack_digit	/lib/x86_64-linux-gnu/libc.so.6	369952	327	0	61	0	0	0	0	0	0	0	0
+       270	       266	    377631	    0	      1	                      __GI___printf_fp_l	/lib/x86_64-linux-gnu/libc.so.6	371072	11295	0	54	0	0	0	0	0	0	0	0
+       271	       542	     11197	    1	      0	              [Loop@0x2b98 in write_vtk]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	11160	46	11206	45	0	0	0	0	0	0	0	0
+       272	       271	   1265346	    0	      1	                          ___fprintf_chk	/lib/x86_64-linux-gnu/libc.so.6	1265184	192	0	51	0	0	0	0	0	0	0	0
+       273	       558	    479692	    0	      1	                          outstring_func	/lib/x86_64-linux-gnu/libc.so.6	479616,479635,479654,485288,485968	14,14,80,6,16	0	62	0	1	0	0	0	0	0	0
+       274	       273	    571129	    0	      1	                     _IO_new_file_xsputn	/lib/x86_64-linux-gnu/libc.so.6	571008	812	0	63	0	0	0	0	0	0	0	0
+       275	         4	      4984	    0	      0	                                    main	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	4864	466	0	3	0	0	0	0	0	0	0	0
+       276	         4	      5009	    0	      0	                                    main	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	4864	466	0	3	0	0	0	0	0	0	0	0
+       277	         5	     15182	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       278	       277	     15760	    1	      0	                [Loop@0x3b4e in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15182,15272,16120,16144,16263	84,821,15,25,97	16093	7	0	0	0	0	0	0	0	0
+       279	       278	     15792	    1	      0	                [Loop@0x3d90 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15760	260	16020	6	0	0	0	0	0	0	0	0
+       280	         5	     15977	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       281	         5	     15956	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       282	       277	     15207	    1	      0	                [Loop@0x3b4e in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15182,15272,16120,16144,16263	84,821,15,25,97	16093	7	0	0	0	0	0	0	0	0
+       283	       282	     15248	    1	      0	                [Loop@0x3b67 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15207,15272,16120,16144	59,443,15,25	15715	10	0	0	0	0	0	0	0	0
+       284	       283	     15272	    1	      0	                [Loop@0x3b90 in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	15248,15272,16120,16144	18,433,15,14	15705	9	0	0	0	0	0	0	0	0
+       285	         5	     15371	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       286	         5	     15973	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       287	         5	     15379	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       288	         5	     15839	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       289	         5	     15498	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       290	         5	     15491	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       291	         5	     15939	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       292	         5	     15506	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       293	         4	      4995	    0	      0	                                    main	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	4864	466	0	3	0	0	0	0	0	0	0	0
+       294	        16	     13664	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       295	       294	     13696	    1	      0	[Loop@0x3560 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13664	489	14153	13	0	0	0	0	0	0	0	0
+       296	        16	     13853	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       297	         5	     15982	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       298	         5	     15502	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       299	         5	     15947	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       300	         5	     15529	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       301	         5	     15314	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       302	         5	     15282	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       303	         5	     15514	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       304	         5	     15510	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       305	         5	     15986	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       306	         5	     15814	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       307	         5	     15383	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       308	         5	     15436	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       309	         5	     15286	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       310	         5	     15876	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       311	         5	     15810	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       312	         5	     15872	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       313	         5	     15912	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       314	         5	     15902	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       315	         5	     15906	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       316	         5	     15526	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       317	         5	     15469	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       318	         5	     16125	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       319	         5	     15427	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       320	         5	     15968	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       321	         5	     15423	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       322	         5	     16130	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       323	         4	      5021	    0	      0	                                    main	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	4864	466	0	3	0	0	0	0	0	0	0	0
+       324	        44	     16672	    0	      0	                         update_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16368	419	0	15	0	0	0	0	0	0	0	0
+       325	       324	     16688	    1	      0	        [Loop@0x4120 in update_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16672	106	16778	16	0	0	0	0	0	0	0	0
+       326	        44	     16756	    0	      0	                         update_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16368	419	0	15	0	0	0	0	0	0	0	0
+       327	         5	     15964	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       328	         5	     15465	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       329	         5	     15844	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       330	         5	     15487	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       331	         5	     15309	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       332	         5	     15943	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       333	        44	     16472	    0	      0	                         update_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16368	419	0	15	0	0	0	0	0	0	0	0
+       334	       333	     16488	    1	      0	        [Loop@0x4058 in update_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16472	113	16585	18	0	0	0	0	0	0	0	0
+       335	        44	     16567	    0	      0	                         update_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16368	419	0	15	0	0	0	0	0	0	0	0
+       336	         5	     15898	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       337	         5	     15272	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       338	        16	     13128	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       339	       338	     13152	    1	      0	[Loop@0x3348 in compute_tentative_velocity]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13128	486	13614	20	0	0	0	0	0	0	0	0
+       340	        16	     13569	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       341	         5	     15483	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       342	         5	     15291	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       343	         5	     15319	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       344	         4	      5002	    0	      0	                                    main	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	4864	466	0	3	0	0	0	0	0	0	0	0
+       345	        59	     14688	    0	      0	                             compute_rhs	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14592	224	0	22	0	0	0	0	0	0	0	0
+       346	       345	     14704	    1	      0	            [Loop@0x3960 in compute_rhs]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14688	121	14809	23	0	0	0	0	0	0	0	0
+       347	        59	     14777	    0	      0	                             compute_rhs	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14592	224	0	22	0	0	0	0	0	0	0	0
+       348	         5	     15684	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       349	         5	     16144	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       350	         5	     15458	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       351	         5	     15891	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       352	         5	     15375	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       353	        44	     16751	    0	      0	                         update_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16368	419	0	15	0	0	0	0	0	0	0	0
+       354	         5	     15960	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       355	        59	     14769	    0	      0	                             compute_rhs	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14592	224	0	22	0	0	0	0	0	0	0	0
+       356	         5	     15832	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       357	         5	     15865	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       358	        16	     14118	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       359	         5	     15474	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       360	         5	     15330	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       361	        16	     14080	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       362	         5	     15453	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       363	         5	     15935	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       364	         5	     15856	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       365	        44	     16707	    0	      0	                         update_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16368	419	0	15	0	0	0	0	0	0	0	0
+       366	        16	     13961	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       367	         5	     15542	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       368	         5	     15769	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       369	        16	     13582	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       370	         5	     15431	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       371	        16	     13467	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       372	         4	      5028	    0	      0	                                    main	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	4864	466	0	3	0	0	0	0	0	0	0	0
+       373	        85	     11824	    0	      0	               apply_boundary_conditions	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	11456	1538	0	25	0	0	0	0	0	0	0	0
+       374	        85	     11981	    0	      0	               apply_boundary_conditions	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	11456	1538	0	25	0	0	0	0	0	0	0	0
+       375	         5	     15523	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       376	        16	     13394	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       377	         5	     15534	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       378	        16	     13928	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       379	         5	     15418	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       380	         4	      5099	    0	      0	                                    main	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	4864	466	0	3	0	0	0	0	0	0	0	0
+       381	         5	     14989	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       382	       381	     15008	    1	      0	                [Loop@0x3a8d in poisson]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14989	60	15049	28	0	0	0	0	0	0	0	0
+       383	         5	     15031	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       384	         5	     15415	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       385	        16	     13574	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       386	        92	     16928	    0	      0	                   set_timestep_interval	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16800	520	0	30	0	0	0	0	0	0	0	0
+       387	       386	     16944	    1	      0	  [Loop@0x4220 in set_timestep_interval]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16928	66	17000	31	0	0	0	0	0	0	0	0
+       388	        92	     16969	    0	      0	                   set_timestep_interval	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16800	520	0	30	0	0	0	0	0	0	0	0
+       389	         5	     15035	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       390	         5	     15252	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       391	        59	     14783	    0	      0	                             compute_rhs	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14592	224	0	22	0	0	0	0	0	0	0	0
+       392	        16	     13578	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       393	         5	     15359	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       394	        16	     14114	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       395	         5	     15926	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       396	        44	     16549	    0	      0	                         update_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16368	419	0	15	0	0	0	0	0	0	0	0
+       397	         5	     16120	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       398	         5	     15548	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       399	        16	     14099	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       400	        16	     13347	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       401	         5	     15806	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       402	         5	     15301	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       403	        44	     16561	    0	      0	                         update_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16368	419	0	15	0	0	0	0	0	0	0	0
+       404	         5	     15538	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       405	        92	     16965	    0	      0	                   set_timestep_interval	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16800	520	0	30	0	0	0	0	0	0	0	0
+       406	         5	     15894	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       407	        16	     13924	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       408	        16	     13435	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       409	         5	     15361	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       410	        16	     13399	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       411	         5	     15952	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       412	        16	     13351	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       413	         5	     15306	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       414	         5	     15916	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       415	        44	     16541	    0	      0	                         update_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16368	419	0	15	0	0	0	0	0	0	0	0
+       416	        59	     14727	    0	      0	                             compute_rhs	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14592	224	0	22	0	0	0	0	0	0	0	0
+       417	         5	     15479	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       418	         5	     15773	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       419	        44	     16571	    0	      0	                         update_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16368	419	0	15	0	0	0	0	0	0	0	0
+       420	        92	     17064	    0	      0	                   set_timestep_interval	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16800	520	0	30	0	0	0	0	0	0	0	0
+       421	       420	     17088	    1	      0	  [Loop@0x42a8 in set_timestep_interval]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	17064	75	17139	33	0	0	0	0	0	0	0	0
+       422	        92	     17110	    0	      0	                   set_timestep_interval	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16800	520	0	30	0	0	0	0	0	0	0	0
+       423	         5	     15354	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       424	        16	     13592	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       425	         5	     15885	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       426	       373	     11872	    1	      0	[Loop@0x2e30 in apply_boundary_conditions]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	11824,11960	64,42	11888,12002	24	0	0	0	0	0	0	0	0
+       427	        85	     11876	    0	      0	               apply_boundary_conditions	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	11456	1538	0	25	0	0	0	0	0	0	0	0
+       428	        92	     17114	    0	      0	                   set_timestep_interval	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16800	520	0	30	0	0	0	0	0	0	0	0
+       429	        16	     13307	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       430	         5	     15922	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       431	         5	     15334	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       432	        44	     16747	    0	      0	                         update_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16368	419	0	15	0	0	0	0	0	0	0	0
+       433	        16	     13504	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       434	        16	     13212	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       435	        16	     14038	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       436	        16	     13475	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       437	        16	     14122	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       438	        16	     13404	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       439	         5	     15849	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       440	        16	     13997	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       441	        16	     14109	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       442	        16	     13494	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       443	         5	     15796	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       444	         5	     15350	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       445	        59	     14721	    0	      0	                             compute_rhs	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14592	224	0	22	0	0	0	0	0	0	0	0
+       446	        92	     17102	    0	      0	                   set_timestep_interval	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16800	520	0	30	0	0	0	0	0	0	0	0
+       447	         5	     15443	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       448	        16	     13356	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       449	         5	     15400	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       450	         5	     15297	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       451	        16	     14131	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       452	        16	     13965	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       453	        16	     13183	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       454	         5	     16153	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       455	         5	     15387	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       456	        16	     13775	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       457	        16	     13177	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       458	        16	     13811	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       459	        16	     14043	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       460	        16	     13898	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       461	        44	     16739	    0	      0	                         update_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16368	419	0	15	0	0	0	0	0	0	0	0
+       462	        85	     11960	    0	      0	               apply_boundary_conditions	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	11456	1538	0	25	0	0	0	0	0	0	0	0
+       463	        92	     17097	    0	      0	                   set_timestep_interval	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16800	520	0	30	0	0	0	0	0	0	0	0
+       464	        92	     16970	    0	      0	                   set_timestep_interval	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16800	520	0	30	0	0	0	0	0	0	0	0
+       465	         5	     15552	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       466	        16	     13544	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       467	        44	     16557	    0	      0	                         update_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16368	419	0	15	0	0	0	0	0	0	0	0
+       468	         5	     15990	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       469	        16	     13463	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       470	        16	     13218	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       471	        59	     14787	    0	      0	                             compute_rhs	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14592	224	0	22	0	0	0	0	0	0	0	0
+       472	        16	     14094	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       473	         5	     15408	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       474	        44	     16504	    0	      0	                         update_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16368	419	0	15	0	0	0	0	0	0	0	0
+       475	        16	     13724	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       476	         5	     15345	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       477	        44	     16760	    0	      0	                         update_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16368	419	0	15	0	0	0	0	0	0	0	0
+       478	        16	     13499	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       479	         5	     15449	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       480	         5	     15792	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       481	        85	     11872	    0	      0	               apply_boundary_conditions	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	11456	1538	0	25	0	0	0	0	0	0	0	0
+       482	        44	     16506	    0	      0	                         update_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16368	419	0	15	0	0	0	0	0	0	0	0
+       483	        92	     17123	    0	      0	                   set_timestep_interval	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16800	520	0	30	0	0	0	0	0	0	0	0
+       484	         5	     15688	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       485	        16	     13539	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       486	        16	     13858	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       487	         5	     15867	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       488	        16	     13588	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       489	         5	     16149	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       490	         5	     15932	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       491	        44	     16703	    0	      0	                         update_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16368	419	0	15	0	0	0	0	0	0	0	0
+       492	         5	     15821	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       493	         5	     15802	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       494	        16	     13381	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       495	        16	     13386	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       496	        16	     13431	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       497	        92	     17127	    0	      0	                   set_timestep_interval	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16800	520	0	30	0	0	0	0	0	0	0	0
+       498	         5	     15248	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       499	         5	     15023	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       500	        16	     13534	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       501	         5	     15834	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       502	        59	     14751	    0	      0	                             compute_rhs	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14592	224	0	22	0	0	0	0	0	0	0	0
+       503	        16	     14001	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       504	         5	     15027	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       505	        16	     13260	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       506	         5	     15392	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       507	         5	     15340	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       508	        85	     11866	    0	      0	               apply_boundary_conditions	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	11456	1538	0	25	0	0	0	0	0	0	0	0
+       509	        16	     13916	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       510	        16	     14075	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       511	        85	     11672	    0	      0	               apply_boundary_conditions	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	11456	1538	0	25	0	0	0	0	0	0	0	0
+       512	        85	     11694	    0	      0	               apply_boundary_conditions	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	11456	1538	0	25	0	0	0	0	0	0	0	0
+       513	        16	     13266	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       514	        85	     11972	    0	      0	               apply_boundary_conditions	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	11456	1538	0	25	0	0	0	0	0	0	0	0
+       515	        16	     14128	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       516	        92	     16957	    0	      0	                   set_timestep_interval	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16800	520	0	30	0	0	0	0	0	0	0	0
+       517	        16	     13556	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       518	        16	     13728	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       519	        16	     13489	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       520	        16	     13312	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       521	        16	     13509	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       522	        44	     16492	    0	      0	                         update_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16368	419	0	15	0	0	0	0	0	0	0	0
+       523	        92	     16982	    0	      0	                   set_timestep_interval	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16800	520	0	30	0	0	0	0	0	0	0	0
+       524	        92	     16953	    0	      0	                   set_timestep_interval	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16800	520	0	30	0	0	0	0	0	0	0	0
+       525	        85	     11827	    0	      0	               apply_boundary_conditions	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	11456	1538	0	25	0	0	0	0	0	0	0	0
+       526	        92	     17093	    0	      0	                   set_timestep_interval	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16800	520	0	30	0	0	0	0	0	0	0	0
+       527	        16	     13825	    0	      0	              compute_tentative_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	13008	1573	0	12	0	0	0	0	0	0	0	0
+       528	         5	     15680	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       529	        44	     16535	    0	      0	                         update_velocity	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	16368	419	0	15	0	0	0	0	0	0	0	0
+       530	        85	     11964	    0	      0	               apply_boundary_conditions	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	11456	1538	0	25	0	0	0	0	0	0	0	0
+       531	         5	     15824	    0	      0	                                 poisson	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	14816	1544	0	5	0	0	0	0	0	0	0	0
+       532	       251	     10616	    0	      0	                               write_vtk	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	10128	1146	0	39	0	0	0	0	0	0	0	0
+       533	       532	     10640	    1	      0	              [Loop@0x2978 in write_vtk]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	10616	100	10716	40	0	0	0	0	0	0	0	0
+       534	       251	     10680	    0	      0	                               write_vtk	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	10128	1146	0	39	0	0	0	0	0	0	0	0
+       535	       251	     10792	    0	      0	                               write_vtk	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	10128	1146	0	39	0	0	0	0	0	0	0	0
+       536	       535	     10816	    1	      0	              [Loop@0x2a28 in write_vtk]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	10792	100	10892	42	0	0	0	0	0	0	0	0
+       537	       251	     10856	    0	      0	                               write_vtk	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	10128	1146	0	39	0	0	0	0	0	0	0	0
+       538	       251	     10968	    0	      0	                               write_vtk	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	10128	1146	0	39	0	0	0	0	0	0	0	0
+       539	       538	     10992	    1	      0	              [Loop@0x2ad8 in write_vtk]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	10968	100	11068	44	0	0	0	0	0	0	0	0
+       540	       251	     11032	    0	      0	                               write_vtk	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	10128	1146	0	39	0	0	0	0	0	0	0	0
+       541	       251	     11144	    0	      0	                               write_vtk	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	10128	1146	0	39	0	0	0	0	0	0	0	0
+       542	       541	     11160	    1	      0	              [Loop@0x2b88 in write_vtk]	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	11144	88	11232	46	0	0	0	0	0	0	0	0
+       543	       251	     11197	    0	      0	                               write_vtk	/home/muaz/Downloads/vortex-shedding(1)/vortex-shedding/vortex	10128	1146	0	39	0	0	0	0	0	0	0	0
+       544	         2	    171555	    0	      1	                  __libc_start_main_impl	/lib/x86_64-linux-gnu/libc.so.6	171456	328	0	48	0	0	0	0	0	0	0	0
+       545	         2	    171583	    0	      1	                  __libc_start_main_impl	/lib/x86_64-linux-gnu/libc.so.6	171456	328	0	48	0	0	0	0	0	0	0	0
+       546	       253	    485711	    0	      1	                     __vfprintf_internal	/lib/x86_64-linux-gnu/libc.so.6	479408	9581	0	53	0	0	0	0	0	0	0	0
+       547	       253	    485804	    0	      1	                     __vfprintf_internal	/lib/x86_64-linux-gnu/libc.so.6	479408	9581	0	53	0	0	0	0	0	0	0	0
+       548	       258	    485711	    0	      1	                     __vfprintf_internal	/lib/x86_64-linux-gnu/libc.so.6	479408	9581	0	53	0	0	0	0	0	0	0	0
+       549	       258	    485804	    0	      1	                     __vfprintf_internal	/lib/x86_64-linux-gnu/libc.so.6	479408	9581	0	53	0	0	0	0	0	0	0	0
+       550	       259	    378176	    0	      1	                      __GI___printf_fp_l	/lib/x86_64-linux-gnu/libc.so.6	371072	11295	0	54	0	0	0	0	0	0	0	0
+       551	       259	    378402	    0	      1	                      __GI___printf_fp_l	/lib/x86_64-linux-gnu/libc.so.6	371072	11295	0	54	0	0	0	0	0	0	0	0
+       552	       265	    485711	    0	      1	                     __vfprintf_internal	/lib/x86_64-linux-gnu/libc.so.6	479408	9581	0	53	0	0	0	0	0	0	0	0
+       553	       265	    485804	    0	      1	                     __vfprintf_internal	/lib/x86_64-linux-gnu/libc.so.6	479408	9581	0	53	0	0	0	0	0	0	0	0
+       554	       266	    374395	    0	      1	                      __GI___printf_fp_l	/lib/x86_64-linux-gnu/libc.so.6	371072	11295	0	54	0	0	0	0	0	0	0	0
+       555	       554	    374409	    1	      1	[Loop at line 962 in __GI___printf_fp_l]	/lib/x86_64-linux-gnu/libc.so.6	374395,375256,376960	95,17,47	0	60	0	0	0	0	0	0	0	0
+       556	       555	    374436	    1	      1	[Loop at line 963 in __GI___printf_fp_l]	/lib/x86_64-linux-gnu/libc.so.6	374409,375256	81,17	0	59	0	0	0	0	0	0	0	0
+       557	       266	    374451	    0	      1	                      __GI___printf_fp_l	/lib/x86_64-linux-gnu/libc.so.6	371072	11295	0	54	0	0	0	0	0	0	0	0
+       558	       272	    479616	    0	      1	                     __vfprintf_internal	/lib/x86_64-linux-gnu/libc.so.6	479408	9581	0	53	0	0	0	0	0	0	0	0
+       559	       272	    479692	    0	      1	                     __vfprintf_internal	/lib/x86_64-linux-gnu/libc.so.6	479408	9581	0	53	0	0	0	0	0	0	0	0
+       560	        -1	         0	    0	      0	                [Unknown stack frame(s)]	n/a	0	0	0	65	0	0	0	0	0	0	0	0
