@@ -7,8 +7,8 @@ class MPI_Test:
         self.imax = imax
         self.jmax = jmax
         self.n = n
-        self.output_filename = f"Tests/{self.imax}x{self.jmax}-MPI-{self.n}"
-        self.command = f"mpirun -n {self.n} {self.PATH}/vortex -x {self.imax} -y {self.jmax} -f 1000 -o {self.output_filename}"
+        self.output_filename = f"{self.imax}x{self.jmax}-MPI-{self.n}"
+        self.command = f"mpirun -n {self.n} {self.PATH}/vortex -x {self.imax} -y {self.jmax} -f 1000 -o Tests/{self.output_filename}"
 
     def run(self):
         print(f"running test -> {self.output_filename}")
@@ -31,7 +31,7 @@ echo "Running {self.output_filename} on {param} CPU cores"
                 
 mpirun -n {param} {self.PATH}/vortex -x {self.imax} -y {self.jmax} -f 1000 -o {self.output_filename}
             """
-        file = open(f"{self.output_filename}.job", 'w+')
+        file = open(f"Jobs/{self.output_filename}.job", 'w+')
         file.write(header)
         file.close()
 
@@ -41,8 +41,8 @@ class OMP_Test:
         self.imax = imax
         self.jmax = jmax
         self.n = n
-        self.output_filename = f"Tests/{self.imax}x{self.jmax}-OMP-{self.n}"
-        self.command = f"export OMP_NUM_TASKS={self.n} {self.n} {self.PATH}/vortex -x {self.imax} -y {self.jmax} -f 1000 -o {self.output_filename}"
+        self.output_filename = f"{self.imax}x{self.jmax}-OMP-{self.n}"
+        self.command = f"export OMP_NUM_TASKS={self.n} {self.PATH}/vortex -x {self.imax} -y {self.jmax} -f 1000 -o Tests/{self.output_filename}"
     
     def generate_slurm(self):
         param = "${SLURM_CPUS_PER_TASK}"
@@ -57,13 +57,47 @@ class OMP_Test:
 #SBATCH --output={self.output_filename}.log          # Standard output and error log
          
 echo "Running {self.output_filename} on {param} CPU cores"
-OMP_NUM_TASKS={param}                
-{self.PATH}/vortex -x {self.imax} -y {self.jmax} -f 1000 -o {self.output_filename}
+export OMP_NUM_TASKS={param}                
+{self.PATH}/vortex -x {self.imax} -y {self.jmax} -f 1000 -o Tests/{self.output_filename}
             """
-        file = open(f"{self.output_filename}.job", 'w+')
+        file = open(f"Jobs/{self.output_filename}.job", 'w+')
         file.write(header)
         file.close()
 
+class CUDA_Test:
+    PATH = "./CUDA/vortex-shedding"
+    def __init__(self, imax, jmax) -> None:
+        self.imax = imax
+        self.jmax = jmax
+        self.output_filename = f"{self.imax}x{self.jmax}-CUDA"
+        self.command = f"{self.PATH}/vortex -x {self.imax} -y {self.jmax} -f 1000 -o Tests/{self.output_filename}"
+    
+    def generate_slurm(self):
+        out = f"""#!/bin/bash
+#SBATCH --job-name={self.output_filename}                    # Job name
+#SBATCH --mail-type=END,FAIL                   # Mail events (NONE, BEGIN, END, FAIL, ALL)
+#SBATCH --mail-user=maa621@york.ac.uk          # Where to send mail
+#SBATCH --ntasks=1                             # Run a single task...
+#SBATCH --cpus-per-task=1                      # ...with a single CPU
+#SBATCH --mem=4gb                            # Job memory request
+#SBATCH --time=00:10:00                        # Time limit hrs:min:sec
+#SBATCH --output={self.output_filename}.log               # Standard output and error log
+#SBATCH --partition=gpu                        # Select the GPU nodes...
+#SBATCH --gres=gpu:1                           # ...and a single GPU
+  
+module load system/CUDA/11.7.0
+ 
+echo `date`: executing gpu_test on host $HOSTNAME with $SLURM_CPUS_ON_NODE cpu cores
+echo
+cudaDevs=$(echo $CUDA_VISIBLE_DEVICES | sed -e 's/,/ /g')
+echo I can see GPU devices $CUDA_VISIBLE_DEVICES
+echo
+ 
+{self.PATH}/vortex -x {self.imax} -y {self.jmax} -f 1000 -o Tests/{self.output_filename}"""
+        file = open(f"Jobs/{self.output_filename}.job", 'w+')
+        file.write(out)
+        file.close()
+        
 def main():
     # run tests
     # different sizes :
@@ -85,7 +119,9 @@ def main():
     ]
     d = domain_configurations[0]
     n_ = 4
-    MPI_Test(d[0],d[1],n_).generate_slurm()
+   # MPI_Test(d[0],d[1],n_).generate_slurm()
+    OMP_Test(d[0],d[1],n_).generate_slurm()
+   # CUDA_Test(d[0],d[1],n_).generate_slurm()
     for n in n_vals:
         for domain in domain_configurations:
             pass
