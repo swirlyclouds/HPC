@@ -2,7 +2,7 @@ import argparse
 import os, sys
  
 class MPI_Test:
-    PATH = "./MPI/'VS_P_Working'/vortex-shedding"
+    PATH = "./MPI/Final"
     def __init__(self, imax, jmax, n) -> None:
         self.imax = imax
         self.jmax = jmax
@@ -16,8 +16,7 @@ class MPI_Test:
 
     def generate_slurm(self):
         param = "${SLURM_NTASKS}"
-        header = f"""sh
-#!/bin/bash
+        header = f"""#!/bin/bash
 #SBATCH --job-name={self.output_filename}               # Job name
 #SBATCH --mail-type=END,FAIL                 # Mail events (NONE, BEGIN, END, FAIL, ALL)
 #SBATCH --mail-user=maa621@york.ac.uk          # Where to send mail
@@ -29,9 +28,14 @@ class MPI_Test:
          
 echo "Running {self.output_filename} on {param} CPU cores"
                 
-mpirun -n {param} {self.PATH}/vortex -x {self.imax} -y {self.jmax} -f 1000 -o {self.output_filename}
+module load mpi/OpenMPI/4.1.4-GCC-12.2.0
+
+cd ./MPI/Final
+make clean
+make
+mpirun -n {param} ./vortex -x {self.imax} -y {self.jmax} -f 1000 -o {self.output_filename}
             """
-        file = open(f"Jobs/{self.output_filename}.job", 'w+')
+        file = open(f"Jobs/MPI/{self.output_filename}.job", 'w+')
         file.write(header)
         file.close()
 
@@ -46,8 +50,7 @@ class OMP_Test:
     
     def generate_slurm(self):
         param = "${SLURM_CPUS_PER_TASK}"
-        header = f"""sh
-#!/bin/bash
+        header = f"""#!/bin/bash
 #SBATCH --job-name={self.output_filename}               # Job name
 #SBATCH --mail-type=END,FAIL                 # Mail events (NONE, BEGIN, END, FAIL, ALL)
 #SBATCH --mail-user=maa621@york.ac.uk          # Where to send mail
@@ -60,7 +63,7 @@ echo "Running {self.output_filename} on {param} CPU cores"
 export OMP_NUM_TASKS={param}                
 {self.PATH}/vortex -x {self.imax} -y {self.jmax} -f 1000 -o Tests/{self.output_filename}
             """
-        file = open(f"Jobs/{self.output_filename}.job", 'w+')
+        file = open(f"Jobs/OMP/{self.output_filename}.job", 'w+')
         file.write(header)
         file.close()
 
@@ -94,7 +97,7 @@ echo I can see GPU devices $CUDA_VISIBLE_DEVICES
 echo
  
 {self.PATH}/vortex -x {self.imax} -y {self.jmax} -f 1000 -o Tests/{self.output_filename}"""
-        file = open(f"Jobs/{self.output_filename}.job", 'w+')
+        file = open(f"Jobs/CUDA/{self.output_filename}.job", 'w+')
         file.write(out)
         file.close()
         
@@ -109,7 +112,7 @@ def main():
         Collosall: 1024 x 4096
     """
 
-    n_vals = range(1,4)
+    n_vals = [1,2,4,8,16,32,64,128,256]
     domain_configurations = [
         (512, 128),
         (256, 64),
@@ -120,10 +123,10 @@ def main():
     d = domain_configurations[0]
     n_ = 4
    # MPI_Test(d[0],d[1],n_).generate_slurm()
-    OMP_Test(d[0],d[1],n_).generate_slurm()
+    #OMP_Test(d[0],d[1],n_).generate_slurm()
    # CUDA_Test(d[0],d[1],n_).generate_slurm()
     for n in n_vals:
         for domain in domain_configurations:
-            pass
+            MPI_Test(domain[0],domain[1],n).generate_slurm()
 
 main()

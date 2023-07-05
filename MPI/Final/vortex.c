@@ -224,7 +224,7 @@ double poisson(int rank, int size) {
                 }
             }
         }
-        MPI_Barrier(MPI_COMM_WORLD);
+        //MPI_Barrier(MPI_COMM_WORLD);
         MPI_Allreduce(&res_tmp, & res_tmp_rcv, 1, MPI_DOUBLE,MPI_SUM,MPI_COMM_WORLD);
         res += res_tmp_rcv;
         res = sqrt(res / fluid_cells) / p0;
@@ -341,8 +341,8 @@ int main(int argc, char *argv[]) {
 
         apply_boundary_conditions();
 
-        if ((iters % output_freq == 0)) {
-            printf("Step %8d, Time: %14.8e (del_t: %14.8e), Residual: %14.8e\n", iters, t+del_t, del_t, res);
+        if ((iters % output_freq == 0) && (rank == 0)) {
+            printf("i[%d]Step %8d, Time: %14.8e (del_t: %14.8e), Residual: %14.8e\n",size, iters, t+del_t, del_t, res);
  
             if ((!no_output) && (enable_checkpoints))
                 write_checkpoint(iters, t+del_t);
